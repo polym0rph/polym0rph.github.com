@@ -1,0 +1,157 @@
+/*
+ *  Common
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(16,16,16);
+  color: rgb(174,172,166);
+  font-family: Georgia, Georgia, serif;
+  font-size: 12pt;
+/*  background-color: rgb(243,243,243);*/
+/*  color: rgb(201,205,204);*/
+}
+
+a, a:visited {
+  color: rgb(17,93,110);
+  text-decoration: none;
+/*  color: rgb(255,150,57);*/
+}
+
+a:hover {
+  color: rgb(89,153,148);
+  text-decoration: underline;
+/*  color: rgb(245,189,106);*/
+}
+
+/*
+ *  Header
+ */
+#header {
+  background-color: rgb(12,12,12);
+  height: 150px;
+/*  background-color: rgb(239,239,239);*/
+}
+
+#header_wrap {
+  margin: 0px auto;
+  width: 920px;
+}
+
+#heading {
+  color: rgb(232,96,26);
+  float: left;
+  font-size: 14pt;
+  margin: 110px 0px 0px 0px;
+}
+
+#heading a, #heading a:hover {
+  color: rgb(232,96,26);
+  text-decoration: none;
+}
+
+#header_site_navigation {
+  float: right;
+  list-style-type: none;
+  margin: 110px 0px 0px 0px;
+}
+
+#header_site_navigation li {
+  display: inline;
+  padding: 0px 0px 0px 20px;
+}
+
+#header_site_navigation a, #header_site_navigation a:visited {
+  color: rgb(255,150,57);
+  text-decoration: none;
+}
+
+#header_site_navigation a:hover {
+  color: rgb(245,189,106);
+  text-decoration: none;
+}
+
+/*
+ *  Content
+ */
+ 
+#content_wrap {
+  margin: 0px auto;
+  padding: 45px 0px 45px 0px;
+  width: 920px;
+}
+
+/*
+ *  Footer
+ */
+
+#footer_wrap {
+  margin: 0px auto;
+  width: 920px;
+}
+
+#footer_credits {
+  float: left;
+}
+
+#footer_contact {
+  float: right;
+}
+
+#footer_contact span{
+  padding: 0px 3px 0px 3px;
+}
+
+/*
+ *  Sticky Footer
+ *  taken from: http://www.cssstickyfooter.com/using-sticky-footer-code.html
+ */
+ 
+html, body, #wrap {
+  height: 100%;
+}
+
+body > #wrap {
+  height: auto;
+  min-height: 100%;
+}
+
+#main {
+  padding-bottom: 80px; /* must be same height as the footer */
+}
+
+#footer {
+ 	height: 80px;
+ 	margin-top: -80px; /* negative value of footer height */
+  background-color: rgb(16,16,16);
+  clear: both;
+  font-size: 9pt;
+  position: relative;
+/*  background-color: rgb(12,12,12);*/
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+  content: ".";
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+/* End hide from IE-mac */
