@@ -28,6 +28,22 @@ a:hover {
 /*  color: rgb(245,189,106);*/
 }
 
+h1, h2, h3 {
+  color: rgb(201,205,204);
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
 /*
  *  Header
  */
@@ -39,7 +55,7 @@ a:hover {
 
 #header_wrap {
   margin: 0px auto;
-  width: 920px;
+  width: 820px;
 }
 
 #heading {
@@ -82,7 +98,24 @@ a:hover {
 #content_wrap {
   margin: 0px auto;
   padding: 45px 0px 45px 0px;
-  width: 920px;
+  width: 820px;
+}
+
+#introduction {
+  margin-bottom: 40px;
+/*  border-bottom: 1px solid rgb(36,35,35);*/
+/*  padding-bottom: 40px;*/
+}
+
+#welcome {
+  color: rgb(201,205,204);
+  font-size: 19pt;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+#usage {
+  line-height: 25px;
 }
 
 /*
@@ -91,7 +124,7 @@ a:hover {
 
 #footer_wrap {
   margin: 0px auto;
-  width: 920px;
+  width: 820px;
 }
 
 #footer_credits {
