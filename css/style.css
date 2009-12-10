@@ -38,6 +38,7 @@ h1 {
 
 h2 {
   font-size: 16pt;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -116,6 +117,22 @@ h3 {
 
 #usage {
   line-height: 25px;
+}
+
+.project {
+/*  clear: both;*/
+}
+
+.image{
+  float: left;
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+}
+
+.abstract {
+  float: left;
+  width: 400px;
 }
 
 /*
