@@ -122,7 +122,6 @@ h3 {
 
 .section {
   font-size: 14pt;
-  margin-bottom: 20px;
 }
 
 .section a, .section a:visited {
@@ -136,6 +135,7 @@ h3 {
 }
 
 .project {
+  margin-top: 20px;
   overflow: hidden;
 }
 
