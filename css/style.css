@@ -80,17 +80,26 @@ h3 {
 
 #header_site_navigation li {
   display: inline;
-  padding: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 20px;
 }
 
 #header_site_navigation a, #header_site_navigation a:visited {
   color: rgb(255,150,57);
+  padding-bottom: 2px;
   text-decoration: none;
 }
 
 #header_site_navigation a:hover {
   color: rgb(245,189,106);
   text-decoration: none;
+}
+
+.current a, .current a:visited{
+  border-bottom: 1px solid rgb(255,150,57);
+}
+
+.current a:hover {
+  border-bottom: 1px solid rgb(245,189,106);
 }
 
 /*

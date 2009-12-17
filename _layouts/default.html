@@ -15,17 +15,30 @@
 				<a href="/">FREDERIK RUDECK</a>
 			</div>
 			<ul id="header_site_navigation">
-				<li>
+				{% if page.page_category == 'home' %}
+				   <li class='current'>
+				{% else %}
+				   <li>
+				{% endif %}
 					<a href="/">Home</a></li>
-				<li>
-					<a href="/projects/">Projects</a>
-				</li>
-				<li>
-					<a href="/about/">About</a>
-				</li>
-				<li>
-					<a href="/contact/">Contact</a>
-				</li>
+				{% if page.page_category == 'projects' %}
+					<li class='current'>
+				{% else %}
+				   <li>
+				{% endif %}
+					<a href="/projects/">Projects</a></li>
+				{% if page.page_category == 'about' %}
+					<li class='current'>
+				{% else %}
+				   <li>
+				{% endif %}
+					<a href="/about/">About</a></li>
+				{% if page.page_category == 'contact' %}
+					<li class='current'>
+				{% else %}
+				   <li>
+				{% endif %}
+					<a href="/contact/">Contact</a></li>
 			</ul>	
 		</div>
 	</div>
