@@ -95,11 +95,11 @@ h3 {
 }
 
 .current a, .current a:visited{
-  border-bottom: 1px solid rgb(255,150,57);
+  border-bottom: 2px solid rgb(255,150,57);
 }
 
 .current a:hover {
-  border-bottom: 1px solid rgb(245,189,106);
+  border-bottom: 2px solid rgb(245,189,106);
 }
 
 /*
