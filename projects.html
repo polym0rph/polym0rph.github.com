@@ -4,4 +4,38 @@ title: Frederik Rudeck - Projects
 page_category: projects
 ---
 
-<p>Under Construction (projects)</p>
+<p class="projects_type">Masters Projects</p>
+<div>	
+	{% for post in site.posts %}
+		{% if post.categories contains 'master' %}
+			<div class="project">
+				<h2>{{ post.name }}</h2>
+				<p class="project_member">{{ post.member }}</p>
+				<div class="image_left">
+					<img src="/images/{{ post.image }}"/>
+				</div>
+				<div class="abstract">
+					<p>{{ post.abstract }} <a href="{{ post.url }}">More...</a></p>
+				</div>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>
+
+<!-- <p class="projects_type">Bachelors Projects</p>
+<div>	
+	{% for post in site.posts %}
+		{% if post.categories contains 'bachelor' %}
+			<div class="project">
+				<h2>{{ post.name }}</h2>
+				<p class="project_member">{{ post.member }}</p>
+				<div class="image_left">
+					<img src="/images/{{ post.image }}"/>
+				</div>
+				<div class="abstract">
+					<p>{{ post.abstract }} <a href="{{ post.url }}">More...</a></p>
+				</div>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div> -->
