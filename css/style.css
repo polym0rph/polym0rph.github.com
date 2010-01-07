@@ -46,6 +46,10 @@ h3 {
   font-size: 14pt;
 }
 
+p {
+  margin-top: 10px;
+}
+
 /*
  *  Header
  */
@@ -135,6 +139,7 @@ h3 {
   font-size: 9pt;
   line-height: 14px;
   margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 .image_left{
