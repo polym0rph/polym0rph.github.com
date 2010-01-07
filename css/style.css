@@ -50,6 +50,10 @@ p {
   margin-top: 20px;
 }
 
+img {
+  border-width: 0px;
+}
+
 /*
  *  Header
  */
