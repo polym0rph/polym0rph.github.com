@@ -1,4 +1,4 @@
-destination: ./_site
+destination: ../polyhome/_site
 auto:        true
 lsi:         false
 server_port: 4000

@@ -43,7 +43,10 @@ h2 {
 }
 
 h3 {
+  border-bottom: 1px solid rgb(36,35,35);
   font-size: 14pt;
+  margin-top: 45px;
+  padding-bottom: 10px;
 }
 
 p {
@@ -60,6 +63,7 @@ img {
 #header {
   background-color: rgb(12,12,12);
   height: 150px;
+  margin-bottom: 45px;
 /*  background-color: rgb(239,239,239);*/
 }
 
@@ -115,9 +119,13 @@ img {
  
 #content_wrap {
   margin: 0px auto;
-  padding: 0px 0px 45px 0px;
+  padding: 0px 0px 55px 0px;
   width: 770px;
 }
+
+/*
+ *  Content - Recent Projects
+ */
 
 .section {
   font-size: 14pt;
@@ -133,25 +141,13 @@ img {
   text-decoration: none;
 }
 
-.header_underlined {
-  border-bottom: 1px solid rgb(36,35,35);
-  color: rgb(233,238,240);
-  font-size: 14pt;
-  margin-top: 45px;
-  padding-bottom: 10px;
-}
-
-.subpage_content {
-  margin-top: 30px;
-}
-
 /*
  *  Content - Index
  */
 
 #introduction {
   border-bottom: 1px solid rgb(36,35,35);
-  margin: 45px 0px 40px 0px;
+  margin: 0px 0px 40px 0px;
   padding-bottom: 40px;
 }
 
@@ -195,29 +191,21 @@ img {
   overflow: hidden;
 }
 
+.project_member, .project_member_border {
+  color: rgb(233,238,240);
+  font-size: 9pt;
+  line-height: 14px;
+  margin-top: 0px;    
+}
 .project_member {
-  color: rgb(233,238,240);
-  font-size: 9pt;
-  line-height: 14px;
   margin-bottom: 20px;
-  margin-top: 0px;
 }
 
-.project_member_span {
-  color: rgb(233,238,240);
-  font-size: 9pt;
-  line-height: 14px;
-  margin-top: 0px;
-}
-
-.project_header_underlined {
+.project_member_border {
   border-bottom: 1px solid rgb(36,35,35);
-  color: rgb(233,238,240);
-  font-size: 14pt;
-  margin: 15px 0px 30px 0px;
+  margin-bottom: 30px;
   padding-bottom: 10px;
 }
-
 
 .image_left{
   border: 1px solid rgb(36,35,35);
@@ -231,9 +219,22 @@ img {
   width: 440px;
 }
 
-.publication_title {
-  display: block;
-  font-style: italic;
+.download {
+  margin-top: 5px;
+}
+
+a.download_link {
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+a.download_link:hover span {
+  color: rgb(89,153,148);
+  text-decoration: underline;
+}
+
+a.download_link img {
+  vertical-align: -15%;
 }
 
 /*

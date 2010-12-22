@@ -1,0 +1,56 @@
+---
+layout: default
+permalink: /projects/lumino/
+page_category: projects
+
+title: Frederik Rudeck - Lumino
+categories: [research]
+
+name: Lumino
+member: Baudisch, P., Becker, T., and Rudeck, F.
+image: lumino.png
+abstract: Lumino building blocks allow tabletop computers based on diffuse illumination to recognize objects arranged in a three-dimensional structure.
+---
+
+h2. {{ page.name }}
+
+p(project_member_border). {{ page.member }}
+
+!/images/{{ page.image }}!
+
+<!-- TODO: Add more lumino project images -->
+
+h3. Abstract
+
+Tabletop computers based on diffuse illumination can track fiducial markers placed on the table’s surface. In this paper, we demonstrate how to do the same with objects arranged in a three-dimensional structure without modifying the table. We present lumino, a system of building blocks. In addition to a marker, each block contains a glass fiber bundle. The bundle optically guides the light reflected off markers in the higher levels down to the table surface, where the table’s built-in camera reads it. While guiding marker images down, the bundle optically scales and rearranges them. It thereby fits the images of an entire vertical arrangement of markers into the horizontal space usually occupied by a single 2D marker.
+
+We present six classes of blocks and matching marker designs, each of which is optimized for different requirements. We show three demo applications. One of them is a construction kit that logs and critiques constructions. The presented blocks are unpowered and maintenance-free, keeping larger numbers of blocks manageable.
+
+"University Project Page":http://www.hpi.uni-potsdam.de/baudisch/projekte/lumino.html
+
+h3. Publications
+
+Baudisch, P. Becker, T, and Rudeck, F.
+__Lumino: tangible blocks for tabletop computers based on glass fiber bundles.__
+In Proceedings of "CHI 2010":http://www.chi2010.org/, Atlanta, GA, April 10-15, 2010, 10 pages.
+<div class="download">"(download_link)!/images/pdf.png! %PDF – 2,3 MB%":http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-CHI10-Lumino.pdf</div>
+
+**CHI 2010 Best Paper Award.**
+
+h3. Demonstrations
+
+Baudisch, P. Becker, T, and Rudeck, F.
+__Lumino: Tangible Building Blocks Based on Glass Fiber Bundles.__
+In "SIGGRAPH 2010 Emerging Technologies":http://www.siggraph.org/s2010/for_attendees/emerging_technologies, Los Angeles, CA, July 25-29, 2010.
+<div class="download">"(download_link)!/images/pdf.png! %PDF – 0,5 MB%":http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-SIGGRAPHETech10-Lumino.pdf</div>
+
+Baudisch, P. Becker, T, and Rudeck, F.
+__Invited Demo: Lumino: Tangible Building Blocks Based on Glass Fiber Bundles.__
+At "ITS 2010":http://www.its2010.org/, Saarbrücken, Germany, November 7-10, 2010.
+
+h3. Press
+
+Gizmodo – "Next-Generation Lego Crossed With Microsoft Surface":http://gizmodo.com/5421983/lumino-project-next+generation-lego-crossed-with-microsoft-surface
+Design Boom – "Lumino":http://www.designboom.com/weblog/cat/16/view/8404/lumino.html
+Microsoft Surface and Objects. Presented at PDC – "Video, minute 1:03":http://www.youtube.com/watch?v=Pytn0b9o_Mw
+New Scientist – "Smart 'Lego' blocks take touch screens into 3D":http://www.newscientist.com/article/dn17919-smart-lego-blocks-take-touch-screens-into-3d.html
