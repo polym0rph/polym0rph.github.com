@@ -33,7 +33,7 @@ h3. Publications
 Baudisch, P. Becker, T, and Rudeck, F.
 __Lumino: tangible blocks for tabletop computers based on glass fiber bundles.__
 In Proceedings of "CHI 2010":http://www.chi2010.org/, Atlanta, GA, April 10-15, 2010, 10 pages.
-<div class="download">"(download_link)!/images/pdf.png! %PDF – 2,3 MB%":http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-CHI10-Lumino.pdf</div>
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %PDF – 2,3 MB%":http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-CHI10-Lumino.pdf</div>
 
 **CHI 2010 Best Paper Award.**
 
@@ -42,7 +42,7 @@ h3. Demonstrations
 Baudisch, P. Becker, T, and Rudeck, F.
 __Lumino: Tangible Building Blocks Based on Glass Fiber Bundles.__
 In "SIGGRAPH 2010 Emerging Technologies":http://www.siggraph.org/s2010/for_attendees/emerging_technologies, Los Angeles, CA, July 25-29, 2010.
-<div class="download">"(download_link)!/images/pdf.png! %PDF – 0,5 MB%":http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-SIGGRAPHETech10-Lumino.pdf</div>
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %PDF – 0,5 MB%":http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-SIGGRAPHETech10-Lumino.pdf</div>
 
 Baudisch, P. Becker, T, and Rudeck, F.
 __Invited Demo: Lumino: Tangible Building Blocks Based on Glass Fiber Bundles.__
