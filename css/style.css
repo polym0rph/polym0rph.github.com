@@ -219,6 +219,13 @@ img {
   width: 440px;
 }
 
+.video {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 640px;
+}
+
 .download {
   margin-top: 5px;
 }

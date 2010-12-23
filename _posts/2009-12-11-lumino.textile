@@ -28,6 +28,15 @@ We present six classes of blocks and matching marker designs, each of which is o
 
 "University Project Page":http://www.hpi.uni-potsdam.de/baudisch/projekte/lumino.html
 
+h3. Video
+
+<div class="video">
+	<video width="640" height="360" controls>
+		<source src="http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-Lumino.mp4"  type="video/mp4" />
+		<source src="http://dl.dropbox.com/u/1677379/2010-Baudisch-Becker-Rudeck-Lumino.ogv"  type="video/ogg" />
+	</video>
+</div>
+
 h3. Publications
 
 Baudisch, P. Becker, T, and Rudeck, F.
