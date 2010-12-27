@@ -22,20 +22,20 @@ page_category: projects
 	{% endfor %}
 </div>
 
-<!-- <p class="header_underlined">Bachelors Projects</p>
+<h3>University Projects</h3>
 <div>	
 	{% for post in site.posts %}
-		{% if post.categories contains 'bachelor' %}
+		{% if post.categories contains 'university' %}
 			<div class="project">
-				<h2>{{ post.name }}</h2>
-				<p class="project_member">{{ post.member }}</p>
-				<div class="image_left">
-					<img src="/images/{{ post.image }}"/>
+				<div class="image_left">					
+					<a href="{{ post.url }}"><img src="/images/{{ post.image }}"/></a>
 				</div>
 				<div class="abstract">
-					<p>{{ post.abstract }} <a href="{{ post.url }}">More...</a></p>
+					<h2>{{ post.name }}</h2>
+					<p class="project_member">{{ post.member }}</p>
+					{{ post.abstract }} <a href="{{ post.url }}">More...</a>
 				</div>
 			</div>
 		{% endif %}
 	{% endfor %}
-</div> -->
+</div>

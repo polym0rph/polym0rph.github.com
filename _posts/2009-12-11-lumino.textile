@@ -18,8 +18,6 @@ p(project_member_border). {{ page.member }}
 
 !/images/lumino.png!
 
-<!-- TODO: Add more lumino project images -->
-
 h3. Abstract
 
 Tabletop computers based on diffuse illumination can track fiducial markers placed on the table’s surface. In this paper, we demonstrate how to do the same with objects arranged in a three-dimensional structure without modifying the table. We present lumino, a system of building blocks. In addition to a marker, each block contains a glass fiber bundle. The bundle optically guides the light reflected off markers in the higher levels down to the table surface, where the table’s built-in camera reads it. While guiding marker images down, the bundle optically scales and rearranges them. It thereby fits the images of an entire vertical arrangement of markers into the horizontal space usually occupied by a single 2D marker.
