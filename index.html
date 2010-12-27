@@ -38,13 +38,14 @@ page_category: home
 	{% for post in site.posts limit:2 %}
 		
 		<div class="project">
-			<h2>{{ post.name }}</h2>
-			<p class="project_member">{{ post.member }}</p>
+			
 			<div class="image_left">
 				<a href="{{ post.url }}"><img src="/images/{{ post.image }}"/></a>
 			</div>
 			<div class="abstract">
-				<span>{{ post.abstract }} <a href="{{ post.url }}">More...</a></span>
+				<h2>{{ post.name }}</h2>
+				<p class="project_member">{{ post.member }}</p>
+				{{ post.abstract }} <a href="{{ post.url }}">More...</a>
 			</div>
 		</div>
 

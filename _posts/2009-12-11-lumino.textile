@@ -8,7 +8,7 @@ categories: [research]
 
 name: Lumino
 member: Baudisch, P., Becker, T., and Rudeck, F.
-image: lumino.png
+image: lumino_small.png
 abstract: Lumino building blocks allow tabletop computers based on diffuse illumination to recognize objects arranged in a three-dimensional structure.
 ---
 
@@ -16,7 +16,7 @@ h2. {{ page.name }}
 
 p(project_member_border). {{ page.member }}
 
-!/images/{{ page.image }}!
+!/images/lumino.png!
 
 <!-- TODO: Add more lumino project images -->
 
