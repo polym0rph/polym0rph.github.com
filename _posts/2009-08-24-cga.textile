@@ -1,0 +1,52 @@
+---
+layout: default
+permalink: /projects/cga/
+page_category: projects
+
+title: Frederik Rudeck - CGA tool chain on UNIX systems
+categories: [university]
+
+name: CGA tool chain on UNIX systems
+member: Becker, T., Rudeck, F., and Timm, R.
+image: cga_small.png
+abstract: CGA is a software visualization tool to give insight into complex, large-scale, existing software systems and their physical composition and relations.
+---
+
+h2. {{ page.name }}
+
+p(project_member_border). {{ page.member }}
+
+!/images/cga.png!
+
+h3. About
+
+"CGA - Call Graph Analyzer":http://www.hpi.uni-potsdam.de/doellner/research/software_analysis_and_visualization.html is a software visualization infrastructure that is developed by the "computer graphics systems chair":http://www.hpi.uni-potsdam.de/doellner/index.html of the "Hasso-Plattner-Institute":http://www.hpi.uni-potsdam.de/. The Call Graph Analyzer obtains information from various fact extraction tools and provides an interactive graph visualization system. CGA addresses the following different software engineering tasks:
+
+* Program understanding
+* Debugging
+* Performance analysis
+* Quality Assurance
+
+When CGA started, the intended operating system was Windows. The goal of this project was to port the whole CGA tool chain to Mac OS X and Linux systems.
+
+With our implementation, we provide an alternative fact extraction tool chain based on common unix development tools like GCC and GDB. This extends CGA to be used to instrument a wider range of projects, because now it is possible to analyze systems which support the GCC compiler.
+
+h3. Downloads
+
+h4. Documentation
+
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %CGA tool chain on UNIX systems documentation – 1,1 MB%":http://dl.dropbox.com/u/1677379/ap_gcc.pdf</div>
+
+h4. Presentations
+
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %Milestone 1 – 1,8 MB%":http://dl.dropbox.com/u/1677379/cga_milestone_1.pdf</div>
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %Milestone 2 – 1,5 MB%":http://dl.dropbox.com/u/1677379/cga_milestone_2.pdf</div>
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %Milestone 3 – 4,1 MB%":http://dl.dropbox.com/u/1677379/cga_milestone_3.pdf</div>
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %Milestone 4 – 3,7 MB%":http://dl.dropbox.com/u/1677379/cga_milestone_4.pdf</div>
+<div class="download">"(download_link)!http://dl.dropbox.com/u/1677379/icons/pdf.png! %Final – 16 MB%":http://dl.dropbox.com/u/1677379/cga_final.pdf</div>
+
+h3. Team Members
+
+* "Torsten Becker":http://torstenbecker.eu/
+* "Frederik Rudeck":http://frederikrudeck.com/
+* "Robert Timm":http://rtti.de/
