@@ -142,3 +142,9 @@ h3. Downloads
 
 * "Source":http://files.rtti.de/random-racer-1.1.0-r326.tar.bz2 (18 MB Tarball)
 * "Mac OS X Binary":http://files.rtti.de/RandomRacer.dmg (16 MB DMG)
+
+h3. Team Members
+
+* "Torsten Becker":http://torstenbecker.eu/
+* "Frederik Rudeck":http://frederikrudeck.com/
+* "Robert Timm":http://rtti.de/

@@ -61,3 +61,9 @@ Gizmodo – "Next-Generation Lego Crossed With Microsoft Surface":http://gizmodo
 Design Boom – "Lumino":http://www.designboom.com/weblog/cat/16/view/8404/lumino.html
 Microsoft Surface and Objects. Presented at PDC – "Video, minute 1:03":http://www.youtube.com/watch?v=Pytn0b9o_Mw
 New Scientist – "Smart 'Lego' blocks take touch screens into 3D":http://www.newscientist.com/article/dn17919-smart-lego-blocks-take-touch-screens-into-3d.html
+
+h3. Team Members
+
+* "Patrick Baudisch":http://patrickbaudisch.com/
+* "Torsten Becker":http://torstenbecker.eu/
+* "Frederik Rudeck":http://frederikrudeck.com/
