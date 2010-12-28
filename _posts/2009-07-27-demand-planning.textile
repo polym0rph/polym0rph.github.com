@@ -1,0 +1,40 @@
+---
+layout: default
+permalink: /projects/demand-planning/
+page_category: projects
+
+title: Frederik Rudeck - Demand Planning on Microsoft Surface
+categories: [university]
+
+name: Demand Planning on Microsoft Surface
+member: Tinnefeld, C., Mueller, S., Becker, T. and Rudeck, F.
+image: demand_planning_small.png
+abstract: Geographic visualization of demand planning data stored in a SAP main-memory database on Microsoft Surface.
+---
+
+h2. {{ page.name }}
+
+p(project_member_border). {{ page.member }}
+
+!/images/demand_planning.png!
+
+h3. About
+
+The demand planning prototype was developed at the "Enterprise Platform and Integration Concepts Group at Hasso-Plattner-Institute":http://epic.hpi.uni-potsdam.de to demonstrate the power of combining in-memory database technology and modern visualization techniques. Therefore, sales data is visualized on a Microsoft Surface table which is stored on a SAP TREX instance. The sales data is stored record by record, every interaction with the Surface table composes the corresponding analytical query that is then executed against all the sales records.
+
+The prototype exposes widgets that can be used to navigate through the different dimensions of the data. Furthermore, it includes a time-slider that allows navigating through the different time dimensions. All data is visualized as pie charts which differ in size in relation to the specific sales volume in the particular region.
+
+"University Related Research Page":http://epic.hpi.uni-potsdam.de/Home/InMemoryDataMgmt
+
+h3. Video
+
+<div class="video">
+	<iframe src="http://player.vimeo.com/video/7972412?portrait=0" width="640" height="360" frameborder="0"></iframe>
+</div>
+
+h3. Team Members
+
+* "Christian Tinnefeld":http://epic.hpi.uni-potsdam.de/Home/ChristianTinnefeld
+* "Stephan Mueller":http://epic.hpi.uni-potsdam.de/Home/StephanMueller
+* "Torsten Becker":http://torstenbecker.eu/
+* "Frederik Rudeck":http://frederikrudeck.com/
