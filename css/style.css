@@ -206,6 +206,19 @@ ul {
   overflow: hidden;
 }
 
+.project_title, .project_title:visited {
+  color: rgb(233,238,240);
+  font-size: 16pt;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project_title:hover {
+  color: white;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
 .project_member, .project_member_border {
   color: rgb(233,238,240);
   font-size: 9pt;
