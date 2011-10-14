@@ -4,43 +4,30 @@ title: Frederik Rudeck
 page_category: home
 ---
 
-<div id="introduction">
+<div class="hero-unit">
 	<p id="welcome">
-		Hi! I‘m a master student at the <a href="http://www.hpi.uni-potsdam.de/">Hasso-Plattner-Institute</a>
-		in Germany with specializations in human computer interactions and mobile &
-		embedded systems.
-	</p>
-	<p id="usage">
-		I use this site as a repository for my university and spare time projects.
-		Feel free drop me a <a href="/contact/">line</a> if you have any questions or comments on some of
-		the projects.
+		Hi! I‘m a master student at the <a href="http://www.hpi.uni-potsdam.de/">Hasso-Plattner-Institute</a> in Germany with specializations in human computer interactions and mobile & embedded systems.
 	</p>
 	<p>
-		<a href="http://de.linkedin.com/pub/frederik-rudeck/28/ba8/429"><img src="http://dl.dropbox.com/u/1677379/icons/linkedin_24.png" alt="linkedin icon"/></a>
-		<a href="https://www.xing.com/profile/Frederik_Rudeck"><img src="http://dl.dropbox.com/u/1677379/icons/xing_24.png" alt="xing icon"/></a>
-		<a href="https://github.com/polym0rph"><img src="http://dl.dropbox.com/u/1677379/icons/github_24.png" alt="github icon"/></a>
-		<a href="http://www.twitter.com/polym0rph"><img src="http://dl.dropbox.com/u/1677379/icons/twitter_24.png" alt="Follow polym0rph on Twitter"/></a>
+		I use this site as a repository for my university and spare time projects. Feel free to drop me a <a href="/contact/">line</a> if you have any questions or comments on some of the projects.
+	</p>
+	<p>
+		<a href="http://de.linkedin.com/pub/frederik-rudeck/28/ba8/429">
+			<img src="/images/linkedin_24.png" alt="linkedin icon"/></a>
+		<a href="https://www.xing.com/profile/Frederik_Rudeck">
+			<img src="/images/xing_24.png" alt="xing icon"/></a>
+		<a href="https://github.com/polym0rph">
+			<img src="/images/github_24.png" alt="github icon"/></a>
+		<a href="http://www.twitter.com/polym0rph">
+			<img src="/images/twitter_24.png"
+				alt="Follow polym0rph on Twitter"/></a>
 	</p>
 </div>
 
-<p class="section"><a href="/projects/">Recent Projects</a></p>
-
-<div>
-	
-	{% for post in site.posts limit:3 %}
-		
-		<div class="project">
-			
-			<div class="image_left">
-				<a href="{{ post.url }}"><img src="/images/{{ post.image }}"/></a>
-			</div>
-			<div class="abstract">
-				<a class="project_title" href="{{ post.url }}">{{ post.name }}</a>
-				<p class="project_member">{{ post.member }}</p>
-				{{ post.abstract }}
-			</div>
-		</div>
-
-	{% endfor %}
-	
+<div class="page-header">
+	<h2>Recent Projects</h2>
 </div>
+
+{% for post in site.posts limit:3 %}
+	{% include project.html %}
+{% endfor %}

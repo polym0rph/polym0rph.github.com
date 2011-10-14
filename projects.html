@@ -4,38 +4,22 @@ title: Frederik Rudeck - Projects
 page_category: projects
 ---
 
-<h3>Research Projects</h3>
-<div>	
-	{% for post in site.posts %}
-		{% if post.categories contains 'research' %}
-			<div class="project">
-				<div class="image_left">					
-					<a href="{{ post.url }}"><img src="/images/{{ post.image }}"/></a>
-				</div>
-				<div class="abstract">
-					<a class="project_title" href="{{ post.url }}">{{ post.name }}</a>
-					<p class="project_member">{{ post.member }}</p>
-					{{ post.abstract }}
-				</div>
-			</div>
-		{% endif %}
-	{% endfor %}
+<div class="page-header">
+	<h2>Research Projects</h2>
 </div>
 
-<h3>University Projects</h3>
-<div>	
-	{% for post in site.posts %}
-		{% if post.categories contains 'university' %}
-			<div class="project">
-				<div class="image_left">					
-					<a href="{{ post.url }}"><img src="/images/{{ post.image }}"/></a>
-				</div>
-				<div class="abstract">
-					<a class="project_title" href="{{ post.url }}">{{ post.name }}</a>
-					<p class="project_member">{{ post.member }}</p>
-					{{ post.abstract }}
-				</div>
-			</div>
-		{% endif %}
-	{% endfor %}
+{% for post in site.posts %}
+	{% if post.categories contains 'research' %}
+		{% include project.html %}
+	{% endif %}
+{% endfor %}
+
+<div class="page-header">
+	<h2>University Projects</h2>
 </div>
+
+{% for post in site.posts %}
+	{% if post.categories contains 'university' %}
+		{% include project.html %}
+	{% endif %}
+{% endfor %}

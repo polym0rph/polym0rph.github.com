@@ -1,360 +1,73 @@
-/*
- *  Common
- */
-
-* {
-  margin: 0;
-  padding: 0;
+/* bootstrap modifications */
+.container {
+  width: 780px;
 }
 
-body {
-  background-color: rgb(16,16,16);
-  color: rgb(201,205,204);
-  font-family: Georgia, Georgia, serif;
-  font-size: 12pt;
-  line-height: 20px;
-/*  background-color: rgb(243,243,243);*/
-/*  color: rgb(201,205,204);*/
-}
-
-a, a:visited {
-  color: rgb(17,93,110);
-  text-decoration: none;
-/*  color: rgb(255,150,57);*/
-}
-
-a:hover {
-  color: rgb(89,153,148);
-  text-decoration: underline;
-/*  color: rgb(245,189,106);*/
-}
-
-h1, h2, h3, h4 {
-  color: rgb(233,238,240);
-/*  color: rgb(201,205,204);*/
-}
-
-h1 {
-  font-size: 18pt;
-}
-
-h2 {
-  font-size: 16pt;
-}
-
-h3 {
-  border-bottom: 1px solid rgb(36,35,35);
-  font-size: 14pt;
-  margin-top: 45px;
-  padding-bottom: 10px;
-}
-
-h4 {
-  font-size: 12pt;
-  margin-top: 20px;
-}
-
-p, table {
-  margin-top: 20px;
-}
-
-th {
-  font-weight: bold;
-  vertical-align: middle;
-}
-
-img {
-  border-width: 0px;
-}
-
-ul {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-/*
- *  Header
- */
-#header {
-  background-color: rgb(12,12,12);
-  height: 150px;
+.hero-unit {
   margin-bottom: 45px;
-/*  background-color: rgb(239,239,239);*/
 }
 
-#header_wrap {
-  margin: 0px auto;
-  width: 770px;
-}
-
-#heading {
-  color: rgb(232,96,26);
-  float: left;
-  font-size: 15pt;
-  margin: 100px 0px 0px 0px;
-}
-
-#heading a, #heading a:hover {
-  color: rgb(232,96,26);
-  text-decoration: none;
-}
-
-#header_site_navigation {
-  float: right;
-  list-style-type: none;
-  margin: 100px 0px 0px 0px;
-}
-
-#header_site_navigation li {
-  display: inline;
-  margin: 0px 0px 0px 20px;
-}
-
-#header_site_navigation a, #header_site_navigation a:visited {
-  color: rgb(255,150,57);
-  text-decoration: none;
-}
-
-#header_site_navigation a:hover {
-  color: rgb(245,189,106);
-  text-decoration: none;
-}
-
-.current a, .current a:visited{
-  border-bottom: 1px solid rgb(255,150,57);
-}
-
-.current a:hover {
-  border-bottom: 1px solid rgb(245,189,106);
-}
-
-/*
- *  Content
- */
- 
-#content_wrap {
-  margin: 0px auto;
-  padding: 0px 0px 55px 0px;
-  width: 770px;
-}
-
-/*
- *  Content - Recent Projects
- */
-
-.section {
-  font-size: 14pt;
-}
-
-.section a, .section a:visited {
-  color: rgb(255,150,57);
-  text-decoration: none;
-}
-
-.section a:hover {
-  color: rgb(245,189,106);
-  text-decoration: none;
-}
-
-/*
- *  Content - Index
- */
-
-#introduction {
-  border-bottom: 1px solid rgb(36,35,35);
-  margin: 0px 0px 40px 0px;
-  padding-bottom: 20px;
-}
-
-#welcome {
-  color: rgb(233,238,240);
-  font-size: 18pt;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-
-#usage {
-  line-height: 25px;
-}
-
-/*
- *  Content - Contact
- */
-
-#contact_options_list {
-  margin-top: 40px;
-}
-
-.contact_option_name {
-  float: left;
-  text-align: right;
-  width: 114px;
-}
-
-.contact_option_content {
-  float: left;
-  margin: 0px 0px 20px 20px;
-  width: 630px;
-}
-
-/*
- *  Content - Projects
- */
-
-.project {
-  margin-top: 30px;
-  overflow: hidden;
-}
-
-.project_title, .project_title:visited {
-  color: rgb(233,238,240);
-  font-size: 16pt;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.project_title:hover {
-  color: white;
-  font-size: 16pt;
-  font-weight: bold;
-}
-
-.project_member, .project_member_border {
-  color: rgb(233,238,240);
-  font-size: 9pt;
-  line-height: 14px;
-  margin-top: 0px;    
-}
-.project_member {
-  margin-bottom: 10px;
-}
-
-.project_member_border {
-  border-bottom: 1px solid rgb(36,35,35);
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-}
-
-.image_left{
-  border: 1px solid rgb(36,35,35);
-  float: left;
-  margin-right: 15px;
-  padding: 5px 5px 0px 5px;
-}
-
-.abstract {
-  float: left;
-  width: 640px;
-}
-
-.video {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  width: 640px;
-}
-
-.download {
-  margin-top: 5px;
-}
-
-a.download_link {
-  text-decoration: none;
-  margin-top: 5px;
-}
-
-a.download_link:hover span {
-  color: rgb(89,153,148);
-  text-decoration: underline;
-}
-
-a.download_link img {
-  vertical-align: -15%;
-}
-
-tr.odd {
-  background-color: rgb(36,35,35);
-}
-
-.code_back {
-  background-color: rgb(36,35,35);
+.media-grid a:hover {
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 
-/*
- *  Footer
- */
-
-#footer_wrap {
-  border-top: 1px solid rgb(36,35,35);
-  line-height: 14px;
-  margin: 0px auto;
-  padding-top: 10px;
-  width: 770px;
-}
-
-#footer_credits {
-  float: left;
-}
-
-#footer_contact {
-  float: right;
-}
-
-#footer_contact img {
-  padding-left: 3px;
-}
-
-#footer_contact span{
-  padding: 0px 3px 0px 3px;
-}
-
-/*
- *  Sticky Footer
- *  taken from: http://www.cssstickyfooter.com/using-sticky-footer-code.html
- */
- 
-html, body, #wrap {
+/* sticky footer */
+html, body {
   height: 100%;
 }
 
-body > #wrap {
-  height: auto;
+#wrap {
   min-height: 100%;
 }
 
-#main {
-  padding-bottom: 70px; /* must be same height as the footer */
+#container-wrap {
+  overflow: auto;
+  padding-bottom: 86px;
+  padding-top: 85px;
 }
 
-#footer {
- 	height: 70px;
- 	margin-top: -70px; /* negative value of footer height */
-  background-color: rgb(16,16,16);
+#container-wrap-inner {
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: #EEE;
   clear: both;
-  font-size: 9pt;
+  height: 45px;
+  margin-top: -86px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   position: relative;
-/*  background-color: rgb(12,12,12);*/
 }
 
-.clearfix:after {
-	clear: both;
-	display: block;
-	height: 0;
-	visibility: hidden;
-  content: ".";
+
+/* index */
+#welcome {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 14px;
 }
 
-.clearfix {
-  display: inline-block;
+/* projects */
+.project-name {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-/* Hides from IE-mac \*/
-* html .clearfix {
-  height: 1%;
+.project-member {
+  margin-top: -5px;
 }
 
-.clearfix {
-  display: block;
+.project-header {
+  line-height: 18px;
+  padding-bottom: 6px;
 }
-/* End hide from IE-mac */
+
+/* contact */
+.contact-option {
+  text-align: right;
+}

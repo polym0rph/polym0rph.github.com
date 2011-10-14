@@ -12,21 +12,23 @@ image: lecture_browser_small.png
 abstract: Enhancing the tele-TASK platform with the functionality to search the content of multimedia data and to annotate the recorded lectures.
 ---
 
-h2. {{ page.name }}
-
-p(project_member_border). {{ page.member }}
+{% include project-header.html %}
 
 !/images/lecture_browser.png!
 
-h3. About
+<div class="page-header">
+	<h3>About</h3>
+</div>
 
 The "tele-TASK":http://www.tele-task.de/ platform is an online archive managing a heavily increasing number of tele lectures and video recordings of scientific conferences. These resources are freely available for every internet user. The organization and preparation of content - video data in this case - is essential for the success of a web portal and for the usability. These tasks should be as convenient as possible for those who enter content into the platform.
 
-The goal of the project was to extend and enhance the tele-TASK platform with respect to the integration of semantic web technologies into the system and thus giving the user further possibilities for the purposeful search in multimedia data. The semantic data for the videos were generated with the help of OCR data and the extracted voice of the speaker. Moreover that the project developed a tool to create time-related notes for the recorded lectures.
+The goal of the project was to extend and enhance the tele-TASK platform with respect to the integration of semantic web technologies into the system and thus giving the user further possibilities for the purposeful search in multimedia data. The semantic data for the videos were generated with the help of OCR data and the extracted voice of the speaker. Moreover the project developed a tool to create time-related notes for the recorded lectures.
 
 "University Project Page":http://www.hpi.uni-potsdam.de/meinel/lehre/bachelor_projects/bp2007b3.html
 
-h3. Team Members
+<div class="page-header">
+	<h3>Team Members</h3>
+</div>
 
 * Christoph Barth
 * "Torsten Becker":http://torstenbecker.eu/

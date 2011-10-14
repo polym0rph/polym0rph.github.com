@@ -12,13 +12,13 @@ image: random_racer_small.png
 abstract: 3D racing game with procedurally generated NURBS-based endless terrain, multi-threaded physics and Quake-style console for Mac OS X.
 ---
 
-h2. {{ page.name }}
-
-p(project_member_border). {{ page.member }}
+{% include project-header.html %}
 
 !/images/random_racer.png!
 
-h3. About
+<div class="page-header">
+	<h3>About</h3>
+</div>
 
 Random Racer is a small game (aka tech-demo) developed at the "HPI":http://hpi.uni-potsdam.de which is part of the "University of Potsdam":http://www.uni-potsdam.de. In a course of the chair "Computer Grafik":http://www.hpi.uni-potsdam.de/~doellner/computergrafische_systeme the task was to develop a 3D application. We chose Random Racer because we wanted to have several challenging features. See the "Features":#features section for more information.
 
@@ -26,45 +26,49 @@ In the game you can drive over a practical unending big terrain which gets calcu
 
 Random Racer was mainly developed on Mac OS X, but runs on Linux as well. Since we did not use many UNIX specific APIs, it should not be hard to port it to Windows.
 
-Random Racer is completely written in C++. Rendering in done via VRS ("Virtual Rendering System":http://vrs3d.org) which uses OpenGL, threading is implemented via the SDL ("Simple Direct Media Layer":http://libsdl.org) abstraction, for physics ODE ("Open Dynamics Engine":http://ode.org) is used.
+Random Racer is completely written in C++. Rendering is done via VRS ("Virtual Rendering System":http://vrs3d.org) which uses OpenGL, threading is implemented via the SDL ("Simple Direct Media Layer":http://libsdl.org) abstraction, for physics ODE ("Open Dynamics Engine":http://ode.org) is used.
 
-h3. Screenshots
+<div class="page-header">
+	<h3>Screenshots</h3>
+</div>
 
 !/images/random_racer_1.png! !/images/random_racer_2.png! !/images/random_racer_3.png!
 
-h3(#features). Features
+<div class="page-header">
+	<h3 id="features">Features</h3>
+</div>
 
 h4. Multi threading
 
-Random Racer is multi-threaded, we have 3 tasks which get done in parallel. At first there is the main thread which runs VRS and which renders our 3D scene. The second is the physics thread which calculates everything including the movement of the car on the terrain. And at last there is a terrain generation thread which by the usage of NURBS calculates new terrains in the background.
+Random Racer is multi-threaded, we have 3 tasks which get done in parallel. At first there is the main thread which runs VRS and which renders our 3D scene. The second is the physics thread which calculates everything including the movement of the car on the terrain. And at last there is a terrain generation thread which calculates new terrain in the background.
 
-This separation gives us a big performance increase in contrast to a single threaded architecture because all this 3 tasks can be done mostly independent from each other and alone the separation of the physics thread boosts the frame rate drastically. On recent multi-core machines you get the biggest benefit from this.
+This separation gives us a big performance increase in contrast to a single threaded architecture because all 3 tasks can be done mostly independent from each other and alone the separation of the physics thread boosts the frame rate drastically. On recent multi-core machines you get the biggest benefit from this.
 
-Also the terrain generation by usage of the NURBS can take up to 3 seconds also on 1 GHz machines and would be nearly impossible to realize in 1 thread without lags.
+The terrain generation can take up to 3 seconds also on 1 GHz machines and would be nearly impossible to realize in 1 thread without lags.
 
 h4. NURBS and Terrain Generation
 
 We use a Non-Uniform Rational B-Splines (NURBS) implementation for our terrain generation. The basic implementation of the NURBS algorithm is taken from "robthebloke.org":http://www.robthebloke.org/opengl_programming.html. This sample was ported to C++ and adjusted to fit our requirements.
 
-The algorithm to generates the terrain mesh is based on a algorithm designed by Cox and de Boor. This calculates the resulting points of our surface depending on given control points, which lie in a raster on our surface.
+The algorithm to generate the terrain mesh is based on a algorithm designed by Cox and de Boor. It calculates the resulting points of our surface depending on given control points, which lie in a raster on our surface.
 
 The big advantage of using NURBS is the smooth transition between terrain parts. A second benefit is that we can create nice terrain meshes with a relative low number of control points.
 
-The control points are randomly generated. The algorithm generates in multiple rounds control points with a random position and height (between 0-1). We parametrise the generation so that we can have more hilly terrain in the lower height area and some few high mountains. To set this parameters see the "console reference":#console.
+The control points are randomly generated. The algorithm generates  control points with a random position and height (between 0-1) in multiple rounds. We parametrize the generation so that we can have more hilly terrain in the lower height area and some few high mountains. To set this parameters see the "console reference":#console.
 
 h4. Terrain Loading
 
-As already mentioned, all the visible terrain gets generated in the background by usage of NURBS and must then be shown as a 3D model. For the reloading of the terrain we have chosen to use ODE functionality in the form of 8 planes, this planes trigger replacements of the terrain when the car collides with them.
+As already mentioned, all the visible terrain gets generated in the background  and are then shown as a 3D model. For the reloading of the terrain we have chosen to use ODE functionality in the form of 8 planes, this planes trigger replacements of the terrain when the car collides with them.
 
-We have 4 planes for a big visible terrain which gets shown in VRS as a mesh and 4 for a smaller part for the physics which gets extracted from this bigger visible terrain (across threads).
+We have 4 planes for a big visible terrain which gets shown in VRS as a mesh and 4 smaller parts for the physics which gets extracted from this bigger visible terrain (across threads).
 
 This planes get moved to approximate the driving direction so that as less as possible replacements of the terrain take part.
 
-By usage of this architecture you can drive over a practically unending terrain, whose only border is the maximum size of an integer, so you get hours of playing experience with no reload times and no repeating terrain.
+By using this architecture you can drive over a practically unending terrain, whose only border is the maximum size of an integer, so you get hours of playing experience with no reload times and no repeating terrain.
 
 h4. Physics engine
 
-We wrote a library, which wraps most of the ODE functionality. Since ODE's API is just C, we put it into classes to have it fit our object oriented application structure. Physical objects can be created by encapsulating scene nodes of the rendering system. All data provided by the physics engine is fed back into the scene graph after every world step (physics update). All physics calculations run in its own thread and syncs with VRS rendering thread.
+We wrote a library, which wraps most of the ODE functionality. Since ODE's API is just C, we put it into classes to have it fit our object oriented application structure. Physical objects can be created by encapsulating scene nodes of the rendering system. All data provided by the physics engine is fed back into the scene graph after every world step (physics update). All physics calculations run in its own thread and syncs with the VRS rendering thread.
 
 The library is called VRSODE and is completely independent from Random Racer itself. It can be used in any application which wants to use VRS and ODE together.
 
@@ -78,7 +82,7 @@ You can drive the car using the normal arrow keys and the space key is the handb
 
 h4(#console). In-game console
 
-Random Racer also features a home-brewed in-game console, press ^ or &lt; to toggle it. With the up and down keys you can browse the history and tab or shift-tab tab-completes forwards or backwards your current word.
+Random Racer features a home-brewed in-game console, press ^ or &lt; to toggle it. With the up and down keys you can browse the history and tab or shift-tab tab-completes forwards or backwards your current word.
 
 Backspace or delete deletes the last character and CTRL+U deletes the whole line. If you press enter in a empty line, the last command is repeated.
 
@@ -86,64 +90,69 @@ Also gdb-style shortcuts have been implemented, if you type _fu_ and _fullscreen
 
 You can also configure Random Racer with a file called autoexec.txt, all commands in this file will be executed when Random Racer starts. This file will be read from _~/.random_racer/_ on Linux and _~/Library/Application Support/Random Racer/_ on Mac OS X. All lines in the file which are not empty and do not start with a # (which means comment) will be executed as if they were typed on the console in the interactive way.
 
-Below is a list of the commands which are currently implemented, you can pass _true_, _1_, _false_ or _0_ to the most command which toggle something and they should do what you expect, to all commands which manipulate a special value, passing numbers in a default notation (23.0, -42, etc) should also work.
+Below is a list of the commands which are currently implemented, you can pass _true_, _1_, _false_ or _0_ to the most commands which toggle something and they should do what you expect, to all commands which manipulate a special value, passing numbers in a default notation (23.0, -42, etc) should also work.
 
-(odd).|_.Command|_.Description|
+table(zebra-striped).
+|_.Command|_.Description|
 |autoexec|Runs the autoexec.txt again.|
-(odd).|cam_back|Sets the offset the camera is back to the car, use negative values of you want to look from before the car. If you give no argument this shows the current value of cam_back.|
-|cam_correct|Sets the amount of units the camera looks "over" the car, increase this, if you want to see the are not in the center of the screen.|
-(odd).|cam_fog|Enables of disables the distance fog, if enabled new parts of the terrain become visible more smoothly.|
+|cam_back|Sets the offset of the camera behind the car, use negative values if you want to look from before the car. If you give no argument this shows the current value of cam_back.|
+|cam_correct|Sets the amount of units the camera looks "over" the car, increase this, if you want to see the car not in the center of the screen.|
+|cam_fog|Enables or disables the distance fog, if enabled new parts of the terrain become visible more smoothly.|
 |cam_fov|Use this if you want to see more of the landscape.|
-(odd).|cam_reset|Resets the camera to some default values if you played around too much.|
+|cam_reset|Resets the camera to default values if you played around too much.|
 |cam_static|You can adjust if the camera is static or not, static in this context means that it will always look down to the car in the same angle. If it is not static, if will change the viewing angle depending on the cars affinity. The best is to enable this and disable it and drive down and up a hill, this should demonstrate the effect the best :).|
-(odd).|cam_up|By changing this variable you can adjust how much the camera look from over the car down the car, 0 means from directly behind the car and negative values will look from the ground up to the car.|
-|car_position|Prints the current position of the car to the console, so you can see how far you did drive (You start at {0 0 0}).|
-(odd).|car_reset|Resets the car in rotation and moves it a bit up, use this if you can not drive and made accident.|
+|cam_up|By changing this variable you can adjust how much the camera look from over the car down the car, 0 means from directly behind the car and negative values will look from the ground up to the car.|
+|car_position|Prints the current position of the car to the console, so you can see how far you drove (You start at {0 0 0}).|
+|car_reset|Resets the car in rotation and moves it a bit up, use this if you can not drive and made accident.|
 |collect_coins|Enable or disable the collecting and the spawning of the coins (aka Toruses).|
-(odd).|fullscreen|Toggles full-screen display.|
-|phy_debug|Enables of disables the visibility of _all_ physics
-debug bodies.|
-(odd).|phy_preformance_adjust|This command is highly experimental. If enabled the physics thread will automatically score your system speed and adjust phy_step_size and phy_step_time automatically.|
+|fullscreen|Toggles full-screen display.|
+|phy_debug|Enables or disables the visibility of _all_ physics debug bodies.|
+|phy_preformance_adjust|This command is highly experimental. If enabled the physics thread will automatically score your system speed and adjust phy_step_size and phy_step_time automatically.|
 |phy_step_size|Lets you get and set the step size calculated in every physics update. Smaller steps need more CPU power but enable a more correct simulation.|
-(odd).|phy_step_time|Lets you get and set the time the physics thread will wait for the next update. This is only done if the physics update itself did not take all the time set in phy_step_time. This is used to save CPU time.|
+|phy_step_time|Lets you get and set the time the physics thread will wait for the next update. This is only done if the physics update itself did not take all the time set in phy_step_time. This is used to save CPU time.|
 |quit|Well, this gracefully quits Random Racer in the 1337 way.|
-(odd).|ter_debug_phy|This enables or disables the visibility of the trimesh which represents the current terrain the physics engine uses for its calculations (works pretty well in combination with _ter_texture debug_) _This command is kind of experimental and may crash Random Racer because of a threading issue_.|
-|ter_debug_planes|Use this if you want to see just the reload planes which we use to trigger replacements of the current terrain, valid values are _vrs_,
+|ter_debug_phy|This enables or disables the visibility of the trimesh which represents the current terrain the physics engine uses for its calculations (works pretty well in combination with _ter_texture debug_). _This command is kind of experimental and may crash Random Racer because of a threading issue_.|
+|ter_debug_planes|Use this if you just want to see the reload planes which we use to trigger replacements of the current terrain, valid values are _vrs_,
 _ode_ and _none_ to disable them.|
-(odd).|ter_lowrounds|With this command you can set the rounds of which the Random Control Point Generator will generate the Height of the Control Points between 0 - and a value, which can be set with ter_midheight. With no parameter it will show you the actual number of rounds.|
+|ter_lowrounds|With this command you can set the rounds of which the Random Control Point Generator will generate the Height of the Control Points between 0 - and a value, which can be set with ter_midheight. With no parameter it will show you the actual number of rounds.|
 |ter_midheight|Sets the variable, which influence the Height of the generated Control Points. If you set it for e.g. to 0.6 the Generator will generate values from 0 - 0.6 with a round number specified by ter_lowrounds and values from 0.6 - 1 with a round number specified by ter_uprounds|
-(odd).|ter_texture|This changes the terrain texture. Available textures are _grass_, _mud_, _sand_, _debug_ and _grid_. Just test and enjoy.|
-|ter_uprounds|This changes the Number of Rounds with which the Generator creates Height values between a number specified with ter_midheight  and 1. With no parameter you will get the actual number of rounds.|
-(odd).|version|Show a full version string of all components
-on the console (Random Racer itself, ODE, SDL and VRS)|
+|ter_texture|This changes the terrain texture. Available textures are _grass_, _mud_, _sand_, _debug_ and _grid_. Just test and enjoy.|
+|ter_uprounds|This changes the Number of Rounds with which the Generator creates Height values between a number specified with ter_midheight and 1. With no parameter you will get the actual number of rounds.|
+|version|Show a full version string of all components in the console (Random Racer itself, ODE, SDL and VRS)|
 
-h3. License
+<div class="page-header">
+	<h3>License</h3>
+</div>
 
-Random Racer is distributed under the GNU General Public License (GPL) as provided by the Free Software Foundation (FSF). ("http://www.fsf.org/licensing/licenses/gpl.txt":http://www.fsf.org/licensing/licenses/gpl.txt)
+Random Racer is distributed under the GNU General Public License (GPL) as provided by the Free Software Foundation ("http://www.fsf.org/licensing/licenses/gpl.txt":http://www.fsf.org/licensing/licenses/gpl.txt).
 
-h3. Building
+<div class="page-header">
+	<h3>Building</h3>
+</div>
 
 Random Racer needs the following libraries:
 * VRS Version 3.3
 * ODE Version 0.8 built in _release mode_ and with _double precision_
 * SDL Version 1.2.11
 
-To build Random Racer, download and unpack the archive, which is provided below.
+To build Random Racer, download and unpack the archive, which is provided below. 
 
-p(code_back). @tar zxvf random_racer.tar.gz@
+@tar zxvf random_racer.tar.gz@
   
-Change the file _Makefile.extras_ if you want to add custom includes, libraries or compiler flags.
-  
-Now you can start the building process and execute Random Racer, just type
+Change the file _Makefile.extras_ if you want to add custom includes, libraries or compiler flags. Now you can start the building process and execute Random Racer, just type:
 
-p(code_back). @make run@
+@make run@
 
-h3. Downloads
+<div class="page-header">
+	<h3>Downloads</h3>
+</div>
 
 * "Source":http://files.rtti.de/random-racer-1.1.0-r326.tar.bz2 (18 MB Tarball)
 * "Mac OS X Binary":http://files.rtti.de/RandomRacer.dmg (16 MB DMG)
 
-h3. Team Members
+<div class="page-header">
+	<h3>Team Members</h3>
+</div>
 
 * "Torsten Becker":http://torstenbecker.eu/
 * "Frederik Rudeck":http://frederikrudeck.com/
