@@ -75,3 +75,59 @@ footer {
 .contact-option {
   text-align: right;
 }
+
+
+/* skills rating*/
+.circle {
+  border: 1px solid #404040;
+  float: left;
+  height: 11px;
+  margin-right: 2px;
+  width: 11px;
+    
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+
+  /* Firefox */
+  display:-moz-box;
+  -moz-box-orient:horizontal;
+  -moz-box-pack:center;
+  -moz-box-align:center;
+
+  /* Safari and Chrome */
+  display:-webkit-box;
+  -webkit-box-orient:horizontal;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+
+  /* W3C */
+  display:box;
+  box-orient:horizontal;
+  box-pack:center;
+  box-align:center;  
+}
+
+.inner-circle {
+  background-color: #404040;
+  height: 7px;
+  width: 7px;  
+
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+}
+
+.rating-head-small {
+  font-size: smaller;
+}
+
+.rating-head-av {
+  margin-left: 68px;
+}
+
+.rating-head-go {
+  margin-left: 11px;
+}
+
+.rating-head-sk {
+  margin-left: 11px;
+}
