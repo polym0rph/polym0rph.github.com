@@ -48,7 +48,7 @@ The terrain generation can take up to 3 seconds also on 1 GHz machines and would
 
 h4. NURBS and Terrain Generation
 
-We use a Non-Uniform Rational B-Splines (NURBS) implementation for our terrain generation. The basic implementation of the NURBS algorithm is taken from "robthebloke.org":http://www.robthebloke.org/opengl_programming.html. This sample was ported to C++ and adjusted to fit our requirements.
+We use a Non-Uniform Rational B-Splines (NURBS) implementation for our terrain generation. The basic implementation of the NURBS algorithm is taken from "robthebloke.org":http://nccastaff.bournemouth.ac.uk/jmacey/RobTheBloke/www/opengl_programming.html. This sample was ported to C++ and adjusted to fit our requirements.
 
 The algorithm to generate the terrain mesh is based on a algorithm designed by Cox and de Boor. It calculates the resulting points of our surface depending on given control points, which lie in a raster on our surface.
 

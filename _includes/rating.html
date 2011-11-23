@@ -1,7 +1,0 @@
-{% for i in (1..points) %}
-  <div class="circle"><div class="inner-circle"></div></div>
-{% endfor %}
-{% capture empty_points %}{{ 7 | minus:points }}{% endcapture %}
-{% for i in (1..empty_points) %}
-  <div class="circle"></div>
-{% endfor %}
