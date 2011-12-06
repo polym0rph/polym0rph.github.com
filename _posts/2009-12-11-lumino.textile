@@ -9,7 +9,7 @@ categories: [research]
 name: Lumino
 member: Baudisch, P., Becker, T., and Rudeck, F.
 image: lumino_small.png
-abstract: Lumino building blocks allow tabletop computers based on diffuse illumination to recognize objects arranged in a three-dimensional structure.
+abstract: Tabletop computers based on diffuse illumination can track fiducial markers placed on the table's surface. Luminos are tangible building blocks that allow to do the same with objects arranged in a three-dimensional structure. In addition to a marker, each block contains a glass fiber bundle to guide light reflected off fiducial markers in the higher levels down to the table surface.
 ---
 
 {% include project-header.html %}

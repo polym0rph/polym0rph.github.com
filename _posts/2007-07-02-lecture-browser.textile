@@ -9,7 +9,7 @@ categories: [university]
 name: "Bachelor's Project: Lecture Browser"
 member: Barth, C., Becker, T., Hasselberg, H., and Rudeck, F.
 image: lecture_browser_small.png
-abstract: Enhancing the tele-TASK platform with the functionality to search the content of multimedia data and to annotate the recorded lectures.
+abstract: Enhancing the tele-TASK platform with the functionality to search the content of multimedia data and to annotate recorded lectures.
 ---
 
 {% include project-header.html %}

@@ -10,7 +10,7 @@
 	<![endif]-->
 	
 	<!-- css -->
-	<link href="/css/bootstrap.min.css"
+	<link href="/css/bootstrap.css"
 		rel="stylesheet" type="text/css" media="screen"/>
 	<link href="/css/style.css"
 		rel="stylesheet" type="text/css" media="screen"/>
@@ -52,15 +52,12 @@
 						{% endfor %}
 					</ul>
 				</li>
-				<li>
-					<a href="/about#contact">Contact</a>
-				</li>
-				{% if page.page_category == 'about' %}
+				{% if page.page_category == 'cv' %}
 				<li class="active">
 				{% else %}
 				<li>
 				{% endif %}
-					<a href="/about">CV/Resume</a>
+					<a href="/cv">CV/Resume</a>
 				</li>
 			</ul>
 		</div>

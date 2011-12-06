@@ -6,10 +6,10 @@ page_category: projects
 title: Frederik Rudeck - CGA tool chain on UNIX systems
 categories: [university]
 
-name: CGA tool chain on UNIX systems
+name: CGA tool chain for UNIX systems
 member: Becker, T., Rudeck, F., and Timm, R.
 image: cga_small.png
-abstract: CGA is a software visualization tool to give insight into complex, large-scale, existing software systems and their physical composition and relations.
+abstract: The Call Graph Analyzer (CGA) is a software visualization tool to give insight into complex, large-scale, existing software systems and their physical composition and relations.
 ---
 
 {% include project-header.html %}

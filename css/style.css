@@ -14,6 +14,14 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
+.dropdown-menu li a {
+  text-align: left;
+}
+
+body {
+  text-align: justify;
+}
+
 footer {
   background-color: #EEE;
   height: 45px;
@@ -21,12 +29,16 @@ footer {
   padding-top: 20px;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 li {
   color: #404040;
 }
 
 /* classes */
-.block-margin {
+.block {
   margin-bottom: 18px;
 }
 
