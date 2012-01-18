@@ -1,0 +1,64 @@
+---
+layout: default
+permalink: /projects/rock-paper-fibers/
+page_category: projects
+
+title: Frederik Rudeck - Rock-Paper-Fibers
+categories: [research]
+
+name: Rock-Paper-Fibers
+member: Rudeck, F. and Baudisch, P.
+image: rpf_small.png
+abstract: Rock-Paper-Fibers is a device that is functionally equivalent to a touchpad, yet that users can reshape so as to best match the interaction at hand. For efficiency, users interact bimanually - one hand reshapes the device and the other hand operates the resulting widget.
+---
+
+{% include project-header.html %}
+
+!/images/rpf.png!
+<div class="figure">*Figure 1:* (a) Functionally, Rock-Paper-Fibers is equivalent to a touchpad. However, each sensor element is extended using an optical fiber, making the "touchpad" deformable. (b) In order to make the audio player "play", the user reshapes the device into a "▶" symbol and <notextile>(c)</notextile> strokes his finger across the "▶". This causes the device to recognize its new shape and execute the play command.</div>
+
+<div class="page-header">
+	<h3>Abstract</h3>
+</div>
+
+We explore how to bring physical affordance to mobile touch devices. We present __Rock-Paper-Fibers__, a device that is functionally equivalent to a touchpad, yet that users can reshape so as to best match the interaction at hand. For efficiency, users interact bimanually: one hand reshapes the device and the other hand operates the resulting widget.
+
+We present a prototype that achieves deformability using a bundle of optical fibers, demonstrate an audio player and a simple video game each featuring multiple widgets. We demonstrate how to support applications that require responsiveness by adding mechanical __wedges__ and __clamps__.
+
+The main idea behind __Rock-Paper-Fibers__ is to allow users to obtain physical affordance by deforming the device.
+
+Figure 1 shows our prototype, which consists of a bundle of optical fibers held together by a hand piece. The top ends of the optical fibers are touch-sensitive. Functionally, the device is therefore equivalent to a touchpad: it offers a two-dimensional array of touch-sensitive elements. Unlike a regular touchpad, however, each sensor element has been extended using an optical fiber. Since fibers can be bent, this allows users to deform the “touchpad” or break it apart into multiple touch-sensitive elements (e.g., Figure 2).
+
+!/images/rpf_2.png!
+<div class="figure">*Figure 2:* continuing the audio player scenario from Figure 1, (a-d) the user adjusts audio volume, (e-f) invokes a menu, (g) jumps several tracks ahead, and (h-i) pauses the player.</div>
+
+"University Project Page":http://www.hpi.uni-potsdam.de/baudisch/projects/rock_paper_fibers.html
+
+<div class="page-header">
+	<h3>Video</h3>
+</div>
+
+<div>
+	<video width="640" height="360" controls>
+		<source src="http://dl.dropbox.com/u/1677379/2012-Rudeck-CHI2012-Rock-Paper-Fibers.mp4"  type="video/mp4" />
+		<source src="http://dl.dropbox.com/u/1677379/2012-Rudeck-CHI2012-Rock-Paper-Fibers.ogv"  type="video/ogg" />
+	</video>
+</div>
+
+
+Music: "Revolve" by <a rel="cc:attributionURL" property="cc:attributionName" href="http://ccmixter.org/files/hisboyelroy/430">His Boy Elroy</a> (<a rel="license" href="http://creativecommons.org/licenses/nc-sampling+/1.0/">CC NC-Sampling+ 1.0</a>) and <span xmlns:cc="http://creativecommons.org/ns#" about="urn:sha1:WBRHQ2V4QLK2LN4KWF5VX4GGYCHRQL67">"The Pudding" by <a rel="cc:attributionURL" property="cc:attributionName" href="http://ccmixter.org/files/cdk/5873">cdk</a> (<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>).</span>
+
+<div class="page-header">
+	<h3>Publications</h3>
+</div>
+
+Rudeck, F. and Baudisch, P.
+__Rock-Paper-Fibers: Bringing Physical Affordance to Mobile Touch Devices.__
+In Proceedings of "CHI 2012":http://chi2012.acm.org/, Austin, TX, May 5-10, 2012, 4 pages (Note).
+
+<div class="page-header">
+	<h3>Team Members</h3>
+</div>
+
+* "Frederik Rudeck":http://frederikrudeck.com/
+* "Patrick Baudisch":http://patrickbaudisch.com/
