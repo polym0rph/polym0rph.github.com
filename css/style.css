@@ -70,6 +70,10 @@ div video {
   width: 530px;
 }
 
+.abstract {
+  margin-top: 4px;
+}
+
 /* specific */
 #container-wrap {
   overflow: auto;
