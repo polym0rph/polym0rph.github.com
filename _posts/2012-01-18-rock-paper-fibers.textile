@@ -55,6 +55,7 @@ Music: "Revolve" by <a rel="cc:attributionURL" property="cc:attributionName" hre
 Rudeck, F. and Baudisch, P.
 __Rock-Paper-Fibers: Bringing Physical Affordance to Mobile Touch Devices.__
 In Proceedings of "CHI 2012":http://chi2012.acm.org/, Austin, TX, May 5-10, 2012, 4 pages (Note).
+"!http://dl.dropbox.com/u/1677379/icons/pdf.png! %PDF – 1,4 MB%":http://dl.dropbox.com/u/1677379/2012-Rudeck-Baudisch-CHI12-Rock-Paper-Fibers.pdf
 
 <div class="page-header">
 	<h3>Team Members</h3>
