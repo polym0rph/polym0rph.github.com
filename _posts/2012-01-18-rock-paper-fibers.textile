@@ -49,13 +49,13 @@ Figure 1 shows our prototype, which consists of a bundle of optical fibers held 
 Music: "Revolve" by <a rel="cc:attributionURL" property="cc:attributionName" href="http://ccmixter.org/files/hisboyelroy/430">His Boy Elroy</a> (<a rel="license" href="http://creativecommons.org/licenses/nc-sampling+/1.0/">CC NC-Sampling+ 1.0</a>) and <span xmlns:cc="http://creativecommons.org/ns#" about="urn:sha1:WBRHQ2V4QLK2LN4KWF5VX4GGYCHRQL67">"The Pudding" by <a rel="cc:attributionURL" property="cc:attributionName" href="http://ccmixter.org/files/cdk/5873">cdk</a> (<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>).</span>
 
 <div class="page-header">
-	<h3>Publications</h3>
+	<h3>Publication</h3>
 </div>
 
 Rudeck, F. and Baudisch, P.
 __Rock-Paper-Fibers: Bringing Physical Affordance to Mobile Touch Devices.__
 In Proceedings of "CHI 2012":http://chi2012.acm.org/, Austin, TX, May 5-10, 2012, 4 pages (Note).
-"!http://dl.dropbox.com/u/1677379/icons/pdf.png! %PDF – 1,4 MB%":http://dl.dropbox.com/u/1677379/2012-Rudeck-Baudisch-CHI12-Rock-Paper-Fibers.pdf
+"!http://dl.dropbox.com/u/1677379/icons/pdf.png! %paper (1,4 MB)%":http://dl.dropbox.com/u/1677379/2012-Rudeck-Baudisch-CHI12-Rock-Paper-Fibers.pdf "(margin-left)!http://dl.dropbox.com/u/1677379/icons/presentation.png! %presentation (12,6 MB)%":http://dl.dropbox.com/u/1677379/2012-Rudeck-Baudisch-CHI12-Rock-Paper-Fibers-Presentation.pdf
 
 <div class="page-header">
 	<h3>Team Members</h3>

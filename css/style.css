@@ -74,6 +74,10 @@ div video {
   margin-top: 4px;
 }
 
+.margin-left {
+  margin-left: 10px;
+}
+
 /* specific */
 #container-wrap {
   overflow: auto;
